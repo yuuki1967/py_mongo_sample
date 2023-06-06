@@ -8,8 +8,8 @@ jobs:
     runs-on: ubunttu-latest
     
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3.5.2
         with:
           fetch-depth: 2
           
