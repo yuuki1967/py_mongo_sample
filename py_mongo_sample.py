@@ -10,7 +10,7 @@ if "customers" in mydb.list_collection_names():
         print(x.get("name"), x.get("email"), x.get("phone"), x.get("credit"))
 else:
     print("The collection does not exists.")
-    mydict = { "name": "Yuki Endo", "email": "yuuki1967@hoge.com", "phone": "090-1234-1111", "credit": "1111-2222-3333-4444" }
+    mydict = { "name": "Yuki Endo", "email": "yuuki1967@hoge.com", "phone": "090-2222-1111", "credit": "1111-2222-3333-4444" }
     x = mycol.insert_one(mydict)
     print(x.inserted_id)
     
