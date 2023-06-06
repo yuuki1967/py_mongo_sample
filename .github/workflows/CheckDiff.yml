@@ -15,5 +15,5 @@ jobs:
           
       - name: git diff
         run: |
-          git diff --name-only HEAD^ HEAD >> $GITHUB_OUTPUT
-          git diff --stat HEAD^ HEAD >> $GITHUB_OUTPUT
+          git diff --name-only HEAD^ HEAD
+          git diff --stat HEAD^ HEAD
