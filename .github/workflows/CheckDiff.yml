@@ -5,12 +5,14 @@ on:
 
 jobs:
   check_diff_job:
-    runs-on: ubunttu-latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
+        with:
+          fetch-depth: 2
+          
       - name: git diff
         run: |
           git diff --name-only HEAD^ HEAD
